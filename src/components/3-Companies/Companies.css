@@ -1,0 +1,22 @@
+.c-container{
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.c-container>img{
+  width: 9rem;
+}
+
+@media (min-width:344px) and (max-width:430px) {
+  .c-container{
+    flex-direction: column;
+  }
+}
+
+@media (min-width:431px) and (max-width:600px) {
+  .c-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
