@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './Header.css'
 import {BiMenuAltRight} from 'react-icons/bi'
 import OutsideClickHandler from 'react-outside-click-handler';
+import { Link, NavLink } from 'react-router-dom'
 // -----------imports--------------
 const Header = () => {
   {/* make a use state to control menu to appeare and disppeare*/}
@@ -24,7 +25,9 @@ const Header = () => {
       <div className="h-container flexCenter innerWidth">
 
         {/* the logo image */}
+        <Link to='/'>
         <img src="./logo.png" alt="logo" width={100} loading='lazy'/>
+        </Link>
 {/* --------------
                     the logo image-------------- */}
 
@@ -40,13 +43,9 @@ const Header = () => {
         <div className="h-menu flexCenter"
         style={getMenuStyles( menuOpened)}
         >
-          <a href="">Residencies</a>
-          <a href="">Our Value</a>
-          <a href="">Contact Us</a>
-          <a href="">Get Started</a>
-          <button className='button'>
-            <a href="">Contact Us</a>
-          </button>
+            <NavLink to='/properties'>Properties</NavLink>
+            <a href="mailto:mohamedhaithame320@gmail.com">Contact Us</a>
+            <button className="button">Login</button>
         </div>
         {/*---------------------------------        
          the end of the menu in the header

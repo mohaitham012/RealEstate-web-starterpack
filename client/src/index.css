@@ -16,6 +16,9 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+.wrapper{
+  background-color: white;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -74,8 +77,7 @@ a {
 
 .secondaryText {
   color: rgb(140 139 139);
-  font-size: 1.1rem;
-  margin-top: 5px;
+  font-size: 0.9rem;
 }
 .orangeText {
   color: orange;
@@ -83,20 +85,6 @@ a {
   font-weight: 600;
 }
 
-.button{
-  font-weight: 500;
-  padding: 0.6rem 1.4rem;
-  color: white;
-  background:var(--blue-gradient);
-  border:none ;
-  border-radius: 4px ;
-  transition: all 300ms ease-in;  
-}
-
-.button:hover{
-  cursor: pointer;
-  scale: 1.1;
-}
 /* media queries */
 @media (min-width: 1536px) {
   .innerWidth {
@@ -124,4 +112,18 @@ a {
   .orangeText {
     font-size: 1.2rem;
   }
+}
+
+.button {
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  color: white;
+  background: var(--blue-gradient);
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
